@@ -3,7 +3,8 @@ import Navbar from '../Shared/Navbar/Navbar'
 import Header from './Header/Header'
 import AuthSection from './AuthSection/AuthSection'
 import ImageSlider from './ImageSlider/ImageSlider'
-import Timeline from './Timeline/Timeline'
+// import Timeline from './Timeline/Timeline'
+import Footer from '../Shared/Footer/Footer'
 
 function Home() {
   return (
@@ -21,6 +22,7 @@ function Home() {
     <div data-aos="fade-up" data-aos-duration="1500">
       <Header title="How to get started ?"/>
     </div>
+    <Footer/>
     </>
   )
 }

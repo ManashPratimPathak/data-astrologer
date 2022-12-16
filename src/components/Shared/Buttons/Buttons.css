@@ -6,6 +6,11 @@
     color: rgba(6, 60, 90, 0.77);
     font-family: 'Inria Sans', sans-serif;
     background: linear-gradient(95.15deg, #BBFFDE 0%, rgba(230, 203, 168, 0) 133.65%);
+    transition: 250ms;
+}
+
+.buttonA:hover{
+    transform: scale(0.85);
 }
 
 .buttonA a{

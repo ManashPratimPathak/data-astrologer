@@ -45,4 +45,10 @@
 .social-icons i{
     color: #282C35;
     size: 1.5rem;
+    transition: 250ms;
+}
+
+.social-icons i:hover{
+    transform: scale(0.85);
+    color: #343434;
 }
