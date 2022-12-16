@@ -1,0 +1,67 @@
+.cards{
+    background: transparent;
+    display: grid;
+    place-items: center;
+    height: 70vh;
+    width: 70vw;
+    margin: 0 auto;
+    border-radius: 15px;
+}
+
+.outer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cards .card{
+    background: #28223f;
+    color: white;
+    padding: 1.5rem;
+    height: 50%;
+    width: 50%;
+    border-radius: 0.5rem;
+    position: absolute;
+    pointer-events: none;
+    opacity: 0;
+    animation: animate 15s infinite linear;
+    animation-delay: calc(3s*var(--delay));
+}
+
+.outer:hover .card{
+    animation-play-state: paused;
+}
+
+.cards .card:last-child{
+    animation-delay: calc(-3s*var(--delay));
+}
+
+@keyframes animate{
+    0%{
+        opacity: 0;
+        transform: translateY(25%) scale(0.5);
+        z-index: 2;
+
+    }
+    5%,20%{
+        opacity: 0.4;
+        transform: translateY(25%) scale(0.7);
+        z-index: 10;
+    }
+    25%,40%{
+        opacity: 1;
+        pointer-events: all;
+        transform: translateY(0%) scale(1);
+        z-index: 20;
+    }
+    45%,60%{
+        opacity: 0.4;
+        transform: translateY(-25%) scale(0.7);
+        z-index: 10;
+    }
+    65%,100%{
+        opacity: 0;
+        transform: translateY(-25%) scale(0.5);
+        z-index: 2;
+    }
+}

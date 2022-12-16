@@ -1,0 +1,23 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    border: none;
+    list-style: none;
+}
+
+body{
+    box-sizing: border-box;
+}
+
+h1{
+    font-family: 'Bebas Neue', cursive;
+}
+
+a{
+    font-family: 'Inter', sans-serif;
+}
+
+h2,h3,h4,h5,h6,p{
+    font-family: 'Inria Sans', sans-serif;
+}

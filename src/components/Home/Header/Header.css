@@ -1,0 +1,15 @@
+.Header-home{
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    justify-content: center;
+    padding: 5rem 0;
+}
+
+.Main-header-home{
+    font-size: 6rem;
+    background: -webkit-linear-gradient(rgba(18, 79, 114, 0.93), rgba(18, 79, 114, 0.28));
+    background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
