@@ -1,8 +1,15 @@
 .buttonA{
-    width: 190px;
-    padding: 15px;
+    width: 200px;
+    padding: 20px 15px;
     border-radius: 12px;
     font-size: 1.25rem;
     color: rgba(6, 60, 90, 0.77);
+    font-family: 'Inria Sans', sans-serif;
     background: linear-gradient(95.15deg, #BBFFDE 0%, rgba(230, 203, 168, 0) 133.65%);
+}
+
+.buttonA a{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }

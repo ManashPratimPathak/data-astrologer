@@ -2,8 +2,8 @@
     background: transparent;
     display: grid;
     place-items: center;
-    height: 70vh;
-    width: 70vw;
+    height: 80vh;
+    width: 95vw;
     margin: 0 auto;
     border-radius: 15px;
 }
@@ -15,17 +15,32 @@
 }
 
 .cards .card{
-    background: #28223f;
+    background: transparent;
     color: white;
     padding: 1.5rem;
-    height: 50%;
-    width: 50%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    height: 60%;
+    width: 60%;
     border-radius: 0.5rem;
     position: absolute;
     pointer-events: none;
     opacity: 0;
     animation: animate 15s infinite linear;
     animation-delay: calc(3s*var(--delay));
+}
+
+.cards .img{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards img{
+    width: 95%;
+    z-index: 22;
+    object-fit: cover;
 }
 
 .outer:hover .card{
