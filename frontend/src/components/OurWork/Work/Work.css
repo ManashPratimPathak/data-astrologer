@@ -1,0 +1,9 @@
+.work-div{
+    width: 90vw;
+    height: 90vh;
+    margin: 0 auto;
+    border-radius: 15px;
+    color: white;
+    text-align: center;
+    background-color: rgba(18, 79, 114, 0.93);
+}
